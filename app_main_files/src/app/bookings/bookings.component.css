@@ -1,0 +1,41 @@
+#no_result{
+   color: red;
+   background-color: white;
+   justify-content: center;
+   align-items: center;
+   border-radius: 2em;
+   font-size: 1.2em;
+   margin-top: 5%;
+   margin-right: auto;
+   margin-left: auto;
+   font-weight: bolder;
+   display: flex;
+   flex-direction: column;
+}
+
+.contain_reserv{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 8%;
+   width:80%;
+   background-color: white;
+   border:1px solid gray;
+   border-radius: 5px;
+}
+
+table{
+   
+   margin-top: 10%;
+   font-size: small;
+   border-radius: 1em;
+   border:1px solid gray;
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: center;
+   align-items: center;
+   width: 70%;
+}

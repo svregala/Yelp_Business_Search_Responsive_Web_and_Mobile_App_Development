@@ -1,0 +1,134 @@
+<div class="contain">
+   <!--Form-->
+   <form ngNativeValidate (ngSubmit)="onSubmit()">
+      <div>
+         <!--Title-->
+         <div class="title">Business search</div>
+
+         <div class="container text-left">
+            <!--Keyword-->
+            <div class="row">
+               <div class="col">
+                  <div class="label_fields"><label class="required" for="keyword">Keyword</label></div>
+                  <input id="keyword" class="input_size" type="text" name="keyword" required [(ngModel)]="selectedKeyword" [matAutocomplete]="auto"
+                     [formControl]="searchKeywordCtrl">
+                     <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelected()">
+                        <mat-option *ngFor="let word of filteredKeywords" [value]="word"><span>{{word}}</span></mat-option>
+                     </mat-autocomplete>
+               </div>
+            </div>
+            
+            <!--Distance & Category-->
+            <div class="row">
+               <div class="col-lg-auto">
+                  <div><label class="label_fields" for="distance">Distance(miles)</label></div>
+                  <div><input id="distance" class="distance_input" type="number" name="distance" min="0" placeholder="10" size="15" [(ngModel)]="distanceValue"></div>
+               </div>
+               <div class="col-lg-auto">
+                  <div class="label_fields"><label class="required" for="category">Category</label><br></div>
+                  <div><select id="category" class="category_input" name="category" [(ngModel)]="categoryValue">
+                     <option selected>Default</option>
+                     <option>Arts & Entertainment</option>
+                     <option>Health & Medical</option>
+                     <option>Hotels & Travel</option>
+                     <option>Food</option>
+                     <option>Professional Services</option>
+                  </select></div>
+               </div>
+            </div>
+
+            <!--Location (manual input)-->
+            <div class="row">
+               <div class="col">
+                  <div class="label_fields"><label class="required" for="location">Location</label></div>
+                  <div><input id="location" class="input_size" type="text" name="location" required [disabled]="isChecked" [(ngModel)]="locationValue"></div>
+               </div>
+            </div>
+
+            <!--Location (auto-detection)-->
+            <div class="row">
+               <div class="col">
+                  <div class="part_autodetect">
+                     <input type="checkbox" id="auto_location" name="auto_location" autocomplete="off" (change)="location_auto_detect()">
+                     <label for="auto_location">Auto-detect my location</label>
+                  </div>
+               </div>
+            </div>
+
+            <!--Submit & Clear-->
+            <div class="container text-center">
+               <div class="row">
+                  <div class="col">
+                     <div class="submitClear">
+                        <input class="submit_button" type="submit" value="Submit">
+                        <input class="clear_button" type="reset" value="Clear" (click)="reset()"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+   </form>
+
+</div>
+
+
+
+
+
+
+<!--
+<div class="format">
+      <div class="title">Business search</div>
+
+      <form ngNativeValidate (ngSubmit)="onSubmit()">
+         <div class="row">
+            <div class="part">
+               <div class="label_fields"><label class="required" for="keyword">Keyword</label></div>
+               <div id=keyword_input>
+                  <input id="keyword" class="input_size" type="text" name="keyword" required [(ngModel)]="selectedKeyword" [matAutocomplete]="auto"
+                  [formControl]="searchKeywordCtrl">
+                  <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelected()">
+                     <mat-option *ngFor="let word of filteredKeywords" [value]="word"><span>{{word}}</span></mat-option>
+                  </mat-autocomplete>
+               </div>
+            </div>
+         </div>
+      
+         <div class="flex_container">
+            <div class="flex_child">
+               <div><label class="label_fields" for="distance">Distance(miles)</label><br></div>
+               <div><input id="distance" class="distance_input" type="number" name="distance" min="0" placeholder="10" size="15" [(ngModel)]="distanceValue"></div>
+            </div>
+            <div class="flex_child">
+               <div class="label_fields"><label class="required" for="category">Category</label><br></div>
+               <div><select id="category" class="category_input" name="category" [(ngModel)]="categoryValue">
+                  <option selected>Default</option>
+                  <option>Arts & Entertainment</option>
+                  <option>Health & Medical</option>
+                  <option>Hotels & Travel</option>
+                  <option>Food</option>
+                  <option>Professional Services</option>
+               </select></div>
+            </div>
+         </div>
+         <div class="part">
+            <div class="label_fields"><label class="required" for="location">Location</label></div>
+            <div><input id="location" class="input_size" type="text" name="location" required [disabled]="isChecked" [(ngModel)]="locationValue"></div>
+         </div>
+         <div class="part_autodetect">
+            <input type="checkbox" id="auto_location" name="auto_location" autocomplete="off" (change)="location_auto_detect()">
+            <label for="auto_location">Auto-detect my location</label>
+         </div>
+         <div class="submitClear">
+            <input class="submit_button" type="submit" value="Submit">
+            <input class="clear_button" type="reset" value="Clear" (click)="reset()"/>
+         </div>
+
+      </form>
+
+
+</div>
+-->

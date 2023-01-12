@@ -1,0 +1,102 @@
+.back_button{
+   background-color: white;
+   border:none;
+   border-radius: 15px;
+   margin-top: 5px;
+}
+
+.contain_details{
+   background-color: white;
+   margin-left: auto;
+   margin-right: auto;
+   width: 55%;
+   margin-top: 5%;
+   border-radius: 10px;
+   margin-bottom:8px;
+   border:0.5px solid lightgray;
+}
+
+.mat-tab-header{
+   background-color: yellow;
+}
+
+.mat-tab-label {
+   background-color: yellow;
+}
+
+@media only screen and (max-width: 576px){
+   .contain_details{
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+      width:95%;
+   }
+
+}
+
+.business_name{
+   font-weight: bolder;
+   font-size: 20px;
+   margin-bottom: 6px;
+}
+
+.name{
+   margin-top: 10%;
+}
+
+.reserve{
+   color:white;
+   border-radius: 5px;
+   background-color: red;
+   border:none;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   padding-top: 8px;
+   padding-bottom: 8px;
+}
+
+.cancel{
+   color:white;
+   border-radius: 5px;
+   background-color: blue;
+   border:none;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   padding-top: 8px;
+   padding-bottom: 8px;
+}
+
+.caro{
+   margin-bottom: 10%;
+}
+
+img{
+   width: 100%;
+   height: 100%;
+}
+
+.carousel-control-prev{
+   filter: invert(45%);
+}
+
+.carousel-control-next{
+   filter: invert(45%);
+}
+
+.modal-backdrop {
+   display: none;
+   z-index: 1040 !important;
+}
+
+.modal-content {
+   margin: 2px auto;
+   z-index: 1100 !important;
+}
+
+.res_form{
+   display: block;
+}
+
+.email{
+   border:2px solid green;
+}

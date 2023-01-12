@@ -1,0 +1,20 @@
+nav a {
+   font-family: Arial, Arial, Helvetica, sans-serif;
+   padding: 0.5rem;
+   text-decoration: none;
+   border-radius: 4px;
+   float: right;
+   color: black;
+   font-size:90%;
+}
+
+nav a.active {
+   border: 2px solid black;
+   border-radius: 15px;
+}
+
+.format{
+   display: flex;
+   flex-direction: column;
+   padding-top: 1%;
+}

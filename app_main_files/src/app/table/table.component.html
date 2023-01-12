@@ -1,0 +1,32 @@
+<div *ngIf="!resultService.cleared">
+   <p id="no_result" class="display-6" *ngIf="!resultService.results.length">
+      No results available
+   <p>
+
+   <div class="contain" *ngIf="resultService.results.length">
+
+      <table class="table table-striped">
+         <thead>
+            <tr>
+               <th scope="col">#</th>
+               <th scope="col">Image</th>
+               <th scope="col">Business Name</th>
+               <th scope="col">Rating</th>
+               <th scope="col">Distance (miles)</th>
+            </tr>
+         </thead>
+         <tbody>
+               <tr class="table_row" *ngFor='let result of resultService.results; let i=index' (click)="getDetails(i)">
+                  <th scope="row">{{i+1}}</th>
+                  <td class="image_detail" style="background-image: url({{result.image_url}})"></td>
+                  <td>{{result.name}}</td>
+                  <td>{{result.rating}}</td>
+                  <td>{{result.distance}}</td>
+               </tr>
+         </tbody>
+      </table>
+   
+   </div>
+
+</div>
+
