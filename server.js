@@ -4,8 +4,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const axios = require('axios');
 
-const YELP_KEY = "4d79NWW4C3e88eR0P6hrwwek9S0Mn3ipQema9M9s-0k1u_X-4qbSOPeOevUVLKLWGeGEgzWfMbczmNmjcNuA6p9PNs-MH_Zf5AS9YVazxLIbKiz81o92zkk1t-FoY3Yx"
-const GOOGLE_KEY = "AIzaSyAS89GmhihLVzoMmRM9GvTQ3yGcDotiqi4"
+const YELP_KEY = "THIS IS HIDDEN FROM PUBLIC"
+const GOOGLE_KEY = "THIS IS HIDDEN FROM PUBLIC"
 
 const TEMP_PORT = 3080;
 
