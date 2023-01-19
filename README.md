@@ -3,7 +3,7 @@
 - For the full project description, please take a look at the Project_Description_iOS.pdf
 - Click the following links to see a video demonstrating how the web and mobile applications work: 
    1. Video demo of app on Web: https://www.youtube.com/watch?v=W5lzIFnYYVU
-   2. Video demo of app on Mobile: 
+   2. Video demo of app on Mobile: https://www.youtube.com/watch?v=fhoi_OPxm8g
 
 
 Notes:
