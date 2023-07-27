@@ -5,6 +5,5 @@
    1. Video demo of app on Web: https://www.youtube.com/watch?v=W5lzIFnYYVU
    2. Video demo of app on Mobile: https://www.youtube.com/watch?v=fhoi_OPxm8g
 
-
 Notes:
 - Backend service is written in Node.js and is deployed on Google Cloud Platform (GCP)
